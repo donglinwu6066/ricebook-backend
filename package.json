@@ -1,0 +1,27 @@
+{
+  "name": "ricebook-backend-b",
+  "version": "1.0.0",
+  "description": "1. login ``` curl -c cookies.txt -X POST -H \"Content-Type: application/json\" -d '{\"username\": \"user\", \"password\": \"password\"}' http://127.0.0.1:3000/login ``` 2. logout",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "junit-viewer": "^4.11.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "md5": "^2.3.0",
+    "mongodb": "^6.2.0"
+  }
+}

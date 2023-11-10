@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" errors="0" time="0.511">
+  <testsuite name="Profile" errors="0" failures="0" skipped="0" timestamp="2023-11-08T02:04:01" time="0.311" tests="2">
+    <testcase classname="Profile should get all headlines" name="Profile should get all headlines" time="0.003">
+    </testcase>
+    <testcase classname="Profile should set the headline for a given user" name="Profile should set the headline for a given user" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Authentication" errors="0" failures="0" skipped="0" timestamp="2023-11-08T02:04:01" time="0.313" tests="3">
+    <testcase classname="Authentication should register a user" name="Authentication should register a user" time="0.003">
+    </testcase>
+    <testcase classname="Authentication should login a user with correct credentials" name="Authentication should login a user with correct credentials" time="0.001">
+    </testcase>
+    <testcase classname="Authentication should logout a user" name="Authentication should logout a user" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Articles" errors="0" failures="0" skipped="0" timestamp="2023-11-08T02:04:01" time="0.41" tests="3">
+    <testcase classname="Articles should add a new article" name="Articles should add a new article" time="0.003">
+    </testcase>
+    <testcase classname="Articles should get all articles" name="Articles should get all articles" time="0">
+    </testcase>
+    <testcase classname="Articles should get a single article (by id)" name="Articles should get a single article (by id)" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
