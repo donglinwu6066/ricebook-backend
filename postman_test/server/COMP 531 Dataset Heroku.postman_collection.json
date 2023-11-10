@@ -1,0 +1,635 @@
+{
+	"info": {
+		"_postman_id": "949ae3b0-4432-4713-9d4e-ce6d20b2d730",
+		"name": "COMP 531 Dataset Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30985024"
+	},
+	"item": [
+		{
+			"name": "add test user 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"user1\",\n    \"password\": \"password1\",\n    \"email\": \"foo1@bar.com\",\n    \"dob\": \"01/01/2000\",\n    \"phone\": \"123-456-7890\",\n    \"zipcode\": \"12345\"\n}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/register",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"user1\", \"password\": \"password1\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "headline1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"headline\": \"Hello1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/headline",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"headline"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article user1-1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"1st Post from user 1\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/article",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article user1-2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"2nd Post from user 1\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/article",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add test user2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"user2\",\n    \"password\": \"password2\",\n    \"email\": \"foo2@bar.com\",\n    \"dob\": \"02/02/2000\",\n    \"phone\": \"123-456-7891\",\n    \"zipcode\": \"12346\"\n}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/register",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"user2\", \"password\": \"password2\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "headline2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"headline\": \"Hello2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/headline",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"headline"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add test user3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"user3\",\n    \"password\": \"password3\",\n    \"email\": \"foo3@bar.com\",\n    \"dob\": \"03/03/2000\",\n    \"phone\": \"123-456-7892\",\n    \"zipcode\": \"12347\"\n}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/register",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"user3\", \"password\": \"password3\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "headline3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"headline\": \"Hello3\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/headline",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"headline"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article user3-1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"1st Post from user 3\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/article",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add test user4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"user4\",\n    \"password\": \"password4\",\n    \"email\": \"foo4@bar.com\",\n    \"dob\": \"04/04/2000\",\n    \"phone\": \"123-456-7893\",\n    \"zipcode\": \"12348\"\n}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/register",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"user4\", \"password\": \"password4\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "headline4",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"headline\": \"Hello4\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/headline",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"headline"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article user4-1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"1st Post from user 4\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/article",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article user4-2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"2nd Post from user 4\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/article",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "article user4-3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"3rd Post from user 4\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/article",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add test user5",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"user5\",\n    \"password\": \"password5\",\n    \"email\": \"foo5@bar.com\",\n    \"dob\": \"05/05/2000\",\n    \"phone\": \"123-456-7894\",\n    \"zipcode\": \"12349\"\n}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/register",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user5",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"user5\", \"password\": \"password5\"}"
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/login",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "headline5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"headline\": \"Hello5\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dw73ricebook-8686a4fab411.herokuapp.com/headline",
+					"protocol": "https",
+					"host": [
+						"dw73ricebook-8686a4fab411",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"headline"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
